@@ -322,9 +322,11 @@ html, body{ scroll-behavior:auto !important; }
 }
 .hp-nav-burger span:nth-child(2){ transform:translate(-50%,-50%); }
 .hp-nav-burger span:nth-child(3){ transform:translate(-50%,-50%) translateY(5px); }
-.hp-nav-burger.is-open span:nth-child(1){ transform:translate(-50%,-50%) rotate(45deg); }
-.hp-nav-burger.is-open span:nth-child(2){ opacity:0; }
-.hp-nav-burger.is-open span:nth-child(3){ transform:translate(-50%,-50%) rotate(-45deg); }
+.hp-nav-burger.is-open{ background:#ffffff; border-color:#ffffff; }
+.hp-nav-burger.is-open span{ background:#0d1216; }
+.hp-nav-burger.is-open span:nth-child(1){ opacity:0; }
+.hp-nav-burger.is-open span:nth-child(2){ opacity:1; transform:translate(-50%,-50%); }
+.hp-nav-burger.is-open span:nth-child(3){ opacity:0; }
 
 .hp-nav-menu{ display:none; }
 
@@ -347,9 +349,14 @@ html.hp-nav-locked, html.hp-nav-locked body{ overflow:hidden; height:100%; }
     height:100svh;
     z-index:99998;
     display:flex;
-    align-items:center;
-    justify-content:center;
-    background: rgba(13,18,22,.88);
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:clamp(28px,6svh,52px);
+    padding: 104px 26px 28px;
+    box-sizing:border-box;
+    text-align:left;
+    background: rgba(13,18,22,.92);
     backdrop-filter: blur(28px) saturate(160%);
     -webkit-backdrop-filter: blur(28px) saturate(160%);
     opacity:0;
@@ -368,11 +375,11 @@ html.hp-nav-locked, html.hp-nav-locked body{ overflow:hidden; height:100%; }
   .hp-nav-menu-links{
     display:flex;
     flex-direction:column;
-    align-items:center;
-    gap:clamp(16px,3.6svh,28px);
+    align-items:flex-start;
+    gap:clamp(10px,2.2svh,18px);
   }
   .hp-nav-menu-links a{
-    font: 500 clamp(26px,7.4vw,42px)/1 'Poppins', -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    font: 500 clamp(30px,10vw,46px)/1.05 'Poppins', -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
     color:#ffffff;
     text-decoration:none;
     opacity:0;
@@ -396,9 +403,58 @@ html.hp-nav-locked, html.hp-nav-locked body{ overflow:hidden; height:100%; }
     color:#0d1216 !important;
     font-size:16px !important;
   }
+
+  .hp-nav-menu-footer{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+    width:100%;
+    opacity:0;
+    transform:translateY(10px);
+    transition: opacity .45s ease .18s, transform .45s ease .18s;
+  }
+  .hp-nav-menu.is-open .hp-nav-menu-footer{ opacity:1; transform:translateY(0); }
+  .hp-nav-menu-address{
+    font-style:normal;
+    font: 400 13px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    color:rgba(255,255,255,.55);
+  }
+  .hp-nav-menu-email{
+    display:inline-block;
+    font: 600 11px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:#ffffff;
+    text-decoration:none;
+    padding-bottom:5px;
+    border-bottom:1px solid rgba(255,255,255,.4);
+  }
+  .hp-nav-menu-social{ display:flex; gap:10px; }
+  .hp-nav-menu-social a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:32px;
+    height:32px;
+    border-radius:9px;
+    border:1px solid rgba(255,255,255,.28);
+    color:#ffffff;
+  }
+  .hp-nav-menu-divider{ width:100%; height:1px; background:rgba(255,255,255,.16); }
+  .hp-nav-menu-bottom{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    width:100%;
+    gap:16px;
+  }
+  .hp-nav-menu-bottom-group{ display:flex; flex-direction:column; gap:6px; }
+  .hp-nav-menu-bottom-group span{ font: 500 10px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; letter-spacing:.06em; color:rgba(255,255,255,.42); }
+  .hp-nav-menu-bottom-group--right{ align-items:flex-end; text-align:right; }
 }
 @media (prefers-reduced-motion:reduce){
-  .hp-nav-menu, .hp-nav-menu-links a, .hp-nav-burger span{ transition:none !important; }
+  .hp-nav-menu, .hp-nav-menu-links a, .hp-nav-menu-footer, .hp-nav-burger span{ transition:none !important; }
 }
 
 @media (max-width: 900px){
@@ -2362,6 +2418,7 @@ html.hp-nav-locked, html.hp-nav-locked body{ overflow:hidden; height:100%; }
 .hp-footer-heading{ font-family:var(--rp-font-display); font-size:14px; font-weight:600; color:#fff; margin:0; }
 .hp-footer-text{ font:300 14px/1.6 var(--rp-font-ui); color:rgba(255,255,255,.6); margin:0; max-width:320px; }
 .hp-footer-link{ font:400 14px/1 var(--rp-font-ui); color:rgba(255,255,255,.6); text-decoration:none; transition:color .2s ease; width:fit-content; }
+.hp-footer-link:visited{ color:rgba(255,255,255,.6) !important; }
 .hp-footer-link:hover{ color:var(--rp-gold) !important; }
 .hp-footer-social{ display:flex; gap:10px; }
 .hp-footer-icon-btn{
@@ -2430,7 +2487,7 @@ html.hp-nav-locked, html.hp-nav-locked body{ overflow:hidden; height:100%; }
 .hp-nav.hp-nav-hidden .hp-nav-pill{transform:translate(-50%,calc(-100% - 85px));opacity:0;pointer-events:none}
 .hp-nav:has(:focus-visible) .hp-nav-pill{transform:translateX(-50%);opacity:1;pointer-events:auto}
 body.admin-bar .hp-nav{--hp-admin-offset:32px}
-.hp-nav-menu{height:100dvh;overflow-y:auto;overscroll-behavior:contain;padding:90px 20px 35px}
+.hp-nav-menu{height:100dvh;overflow-y:auto;overscroll-behavior:contain;padding:104px 26px 28px}
 html.hp-nav-locked,html.hp-nav-locked body{height:auto}
 #vender{scroll-margin-top:100px}
 @media(min-width:901px){
@@ -2796,4 +2853,29 @@ html.hp-nav-locked,html.hp-nav-locked body{height:auto}
 @media (max-width:560px){
   .hp-contact-whatsapp{ flex-direction:column; align-items:flex-start; }
   .hp-contact-whatsapp-btn{ width:100%; justify-content:center; }
+}
+
+/* ===== Continuous flow background (Manifesto / Contactos) ===== */
+.hp-flow-bg{
+  position:relative;
+  background: linear-gradient(180deg,
+    #ffffff 0%,
+    #d7e2ec 8%,
+    #a6bbd2 18%,
+    #7c93b3 28%,
+    #5c7597 38%,
+    #4d6d90 48%,
+    #33547a 58%,
+    #24384f 70%,
+    #16222f 84%,
+    #0d1216 100%
+  );
+}
+.hp-flow-bg > .hp-page-hero,
+.hp-flow-bg > .hp-manifesto-statement,
+.hp-flow-bg > .hp-manifesto-reasons,
+.hp-flow-bg > .hp-team,
+.hp-flow-bg > .hp-contact-info,
+.hp-flow-bg > .hp-cta{
+  background: transparent;
 }

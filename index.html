@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIVEW — Imobiliária</title>
+<meta name="description" content="LIVEW — comprar, vender e viver em imóveis com carácter em Lisboa, Porto e Algarve.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hero-parallax" id="heroParallax1">
+
+  <div class="hp-preloader" data-hp-preloader role="status" aria-live="polite" aria-label="A carregar página">
+    <div class="hp-preloader-mark" aria-hidden="true">
+      <span>LIVEW</span>
+      <i></i>
+    </div>
+    <p>A abrir novas possibilidades</p>
+  </div>
+
+  <header class="hp-nav" data-hp-nav>
+    <div class="hp-nav-pill">
+      <a href="#heroParallax1" class="hp-nav-logo" data-hp-nav-link>LIVEW</a>
+
+      <nav class="hp-nav-links" aria-label="Navegação principal">
+        <a href="#imoveis" data-hp-nav-link>Comprar</a>
+        <a href="#vender" data-hp-nav-link>Vender</a>
+        <a href="#porque-nos" data-hp-nav-link>Manifesto</a>
+        <a href="#faq" data-hp-nav-link>News</a>
+        <a href="#contacto" data-hp-nav-link>Contactos</a>
+      </nav>
+
+      <button type="button" class="hp-nav-burger" data-hp-nav-burger aria-label="Abrir menu" aria-expanded="false" aria-controls="hp-nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="hp-nav-menu" id="hp-nav-menu" data-hp-nav-menu aria-hidden="true">
+      <nav class="hp-nav-menu-links" aria-label="Navegação móvel">
+        <a href="#imoveis" data-hp-nav-link>Comprar</a>
+        <a href="#vender" data-hp-nav-link>Vender</a>
+        <a href="#porque-nos" data-hp-nav-link>Manifesto</a>
+        <a href="#faq" data-hp-nav-link>News</a>
+        <a href="#contacto" data-hp-nav-link>Contactos</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hp-section" data-hp-section>
+    <div class="hp-sticky" data-hp-sticky>
+
+      <div class="hp-hero-clip">
+
+        <div class="hp-layer hp-sky" data-hp-layer="sky"></div>
+
+        <div class="hp-layer hp-bg-clouds" data-hp-layer="bgClouds">
+          <svg class="hp-layer-media" viewBox="0 0 1800 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="hpBgCloud" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+                <stop offset="6%" stop-color="#ffffff" stop-opacity="0.85"/>
+                <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <g fill="url(#hpBgCloud)">
+              <ellipse cx="150" cy="180" rx="320" ry="170" opacity="0.85"/>
+              <ellipse cx="80" cy="260" rx="230" ry="130" opacity="0.7"/>
+              <ellipse cx="1420" cy="140" rx="360" ry="190" opacity="0.9"/>
+              <ellipse cx="1540" cy="250" rx="250" ry="140" opacity="0.65"/>
+              <ellipse cx="820" cy="90" rx="270" ry="130" opacity="0.55"/>
+              <ellipse cx="1000" cy="340" rx="290" ry="140" opacity="0.5"/>
+              <ellipse cx="300" cy="400" rx="250" ry="130" opacity="0.42"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="hp-layer hp-house" data-hp-layer="house">
+          <img src="https://darkslategray-vulture-786068.hostingersite.com/wp-content/uploads/2026/09/WADAWDAD-scaled.png" class="hp-layer-media" alt="Casa modernista">
+        </div>
+
+        <div class="hp-layer hp-fg-clouds" data-hp-layer="fgClouds">
+          <svg class="hp-layer-media" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="hpFgBase" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+                <stop offset="55%" stop-color="#ffffff" stop-opacity="0.8"/>
+                <stop offset="80%" stop-color="#ffffff" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#ffffff" stop-opacity="1"/>
+              </linearGradient>
+              <radialGradient id="hpFgCloudShadow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#dbe4ea" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#dbe4ea" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="hpFgCloud" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+                <stop offset="65%" stop-color="#ffffff" stop-opacity="0.95"/>
+                <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect x="-200" y="540" width="2000" height="360" fill="url(#hpFgBase)"/>
+            <g fill="url(#hpFgCloudShadow)" opacity="0.55">
+              <ellipse cx="100" cy="770" rx="380" ry="180"/>
+              <ellipse cx="480" cy="730" rx="340" ry="170"/>
+              <ellipse cx="850" cy="760" rx="360" ry="180"/>
+              <ellipse cx="1220" cy="720" rx="340" ry="170"/>
+              <ellipse cx="1560" cy="770" rx="370" ry="180"/>
+            </g>
+            <g fill="url(#hpFgCloud)">
+              <ellipse cx="100" cy="740" rx="380" ry="180" opacity="0.98"/>
+              <ellipse cx="480" cy="700" rx="340" ry="170" opacity="0.96"/>
+              <ellipse cx="850" cy="730" rx="360" ry="180" opacity="0.97"/>
+              <ellipse cx="1220" cy="690" rx="340" ry="170" opacity="0.96"/>
+              <ellipse cx="1560" cy="740" rx="370" ry="180" opacity="0.98"/>
+              <ellipse cx="700" cy="650" rx="280" ry="130" opacity="0.8"/>
+              <ellipse cx="300" cy="830" rx="460" ry="190" opacity="1"/>
+              <ellipse cx="1300" cy="840" rx="460" ry="190" opacity="1"/>
+              <ellipse cx="800" cy="850" rx="520" ry="190" opacity="1"/>
+            </g>
+            <rect x="-200" y="780" width="2000" height="120" fill="#ffffff"/>
+          </svg>
+        </div>
+
+        <div class="hp-mobile-white-ground" data-hp-mobile-ground aria-hidden="true"></div>
+
+        <div class="hp-layer hp-cloud-wipe" data-hp-layer="cloudWipe"></div>
+
+      </div>
+
+      <div class="hp-content">
+        <div class="hp-meta"></div>
+        <h1 class="hp-title">Imobiliário para o Século XXI.</h1>
+        <p class="hp-subtitle">Comprar, Vender, Investir. Estamos aqui para ajudar.</p>
+
+        <div class="hp-scroll-cue" aria-hidden="true">
+          <span class="hp-scroll-mouse"><span class="hp-scroll-dot"></span></span>
+          <span class="hp-scroll-label">Scroll</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="hp-search">
+    <div class="hp-search-inner">
+      <span class="hp-search-eyebrow">PESQUISA INTELIGENTE</span>
+      <h2 class="hp-search-title">Descreve a casa<br>dos teus sonhos</h2>
+      <p class="hp-search-desc">Descreve <strong>localização, orçamento e características</strong> — e nós tratamos do resto.</p>
+      <form class="hp-search-bar" onsubmit="return false;">
+        <input type="text" class="hp-search-input" placeholder="Ex: Apartamento T2 em Lisboa, até 300.000€, perto do metro…" />
+        <button type="submit" class="hp-search-submit" aria-label="Pesquisar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+      <div class="hp-search-tags">
+        <button type="button">Apartamento T2</button>
+        <button type="button">Moradia com jardim</button>
+        <button type="button">Perto do centro</button>
+        <button type="button">Até 250.000€</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="hp-stats">
+    <div class="hp-stats-sticky" data-hp-stats-sticky>
+      <div class="hp-stats-track">
+        <div class="hp-stat-panel" data-stat-panel>
+          <div class="hp-stat-media">
+            <div class="hp-stat-img-wrap">
+              <img src="https://darkslategray-vulture-786068.hostingersite.com/wp-content/uploads/2026/09/cwcwwwww-scaled.png" class="hp-stat-img hp-stat-img-blur" alt="" aria-hidden="true">
+              <img src="https://darkslategray-vulture-786068.hostingersite.com/wp-content/uploads/2026/09/cwcwwwww-scaled.png" class="hp-stat-img hp-stat-img-sharp" alt="">
+            </div>
+          </div>
+          <div class="hp-stat-text">
+            <span class="hp-stat-eyebrow">A NOSSA HISTÓRIA</span>
+            <span class="hp-stat-message">5 anos a trazer modernidade e tecnologia ao imobiliário.</span>
+          </div>
+        </div>
+        <div class="hp-stat-panel" data-stat-panel>
+          <div class="hp-stat-media">
+            <div class="hp-stat-img-wrap">
+              <img src="https://darkslategray-vulture-786068.hostingersite.com/wp-content/uploads/2026/09/cwcwwwww-scaled.png" class="hp-stat-img hp-stat-img-blur" alt="" aria-hidden="true">
+              <img src="https://darkslategray-vulture-786068.hostingersite.com/wp-content/uploads/2026/09/cwcwwwww-scaled.png" class="hp-stat-img hp-stat-img-sharp" alt="">
+            </div>
+          </div>
+          <div class="hp-stat-text">
+            <span class="hp-stat-eyebrow">A NOSSA MISSÃO</span>
+            <span class="hp-stat-message">Aqui para ajudar, contribuir e crescer contigo.</span>
+          </div>
+        </div>
+        <div class="hp-stat-panel" data-stat-panel>
+          <div class="hp-stat-media">
+            <div class="hp-stat-img-wrap">
+              <img src="https://darkslategray-vulture-786068.hostingersite.com/wp-content/uploads/2026/09/cwcwwwww-scaled.png" class="hp-stat-img hp-stat-img-blur" alt="" aria-hidden="true">
+              <img src="https://darkslategray-vulture-786068.hostingersite.com/wp-content/uploads/2026/09/cwcwwwww-scaled.png" class="hp-stat-img hp-stat-img-sharp" alt="">
+            </div>
+          </div>
+          <div class="hp-stat-text">
+            <span class="hp-stat-eyebrow">FALA CONNOSCO</span>
+            <span class="hp-stat-message">A resposta mais rápida está a um WhatsApp de distância.</span>
+            <a href="https://wa.me/351924332777" target="_blank" rel="noopener" class="hp-stat-whatsapp">
+              <span class="hp-stat-whatsapp-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.83 9.83 0 0 0 12.04 2zm0 1.67c2.19 0 4.25.85 5.8 2.4a8.18 8.18 0 0 1 2.41 5.83c0 4.55-3.7 8.24-8.24 8.24a8.24 8.24 0 0 1-4.2-1.15l-.3-.18-3.14.82.84-3.06-.2-.32a8.18 8.18 0 0 1-1.26-4.38c0-4.55 3.7-8.2 8.29-8.2zm-4.5 4.7c-.16 0-.42.06-.64.31-.22.25-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.7 2.6 4.17 3.64 2.05.86 2.47.69 2.92.65.45-.04 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.68-.8-.22-.08-.39-.12-.55.12-.16.25-.63.8-.78.96-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.95-1.2-.72-.64-1.2-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.35-.76-1.84-.2-.48-.4-.42-.55-.42h-.47z"/></svg>
+              </span>
+              <span>Falar no WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hp-video-reveal">
+    <div class="hp-video-sticky" data-hp-video-sticky>
+      <div class="hp-video-frame" data-hp-video-frame>
+        <video class="hp-video-el" src="https://darkslategray-vulture-786068.hostingersite.com/wp-content/uploads/2026/09/mixkit-waterfall-in-forest-2213-hd-ready.mp4" autoplay muted loop playsinline></video>
+      </div>
+    </div>
+  </section>
+
+  <section class="hp-services-choice" data-hp-services-choice id="servicos">
+
+    <section class="hp-services">
+      <div class="hp-services-bg" data-hp-services-bg>
+        <img src="https://darkslategray-vulture-786068.hostingersite.com/wp-content/uploads/2026/09/WADAWDAD-scaled.png" class="hp-services-bg-img" alt="">
+      </div>
+      <div class="hp-services-scrim"></div>
+      <div class="hp-services-inner">
+        <div class="hp-services-header">
+          <span class="hp-services-eyebrow">O QUE FAZEMOS</span>
+          <h2 class="hp-services-title">Serviços pensados<br>para ir mais longe.</h2>
+          <p class="hp-services-desc">Mais do que intermediar negócios, acompanhamos cada decisão com estratégia, conhecimento e atenção ao detalhe.</p>
+        </div>
+
+        <div class="hp-services-list">
+
+          <article class="hp-service" data-service>
+            <div class="hp-service-top">
+              <span class="hp-service-number">01</span>
+              <h3>Compra</h3>
+              <span class="hp-service-arrow">↗</span>
+            </div>
+            <div class="hp-service-hidden">
+              <p>Encontramos a casa certa para o teu momento, filtrando o mercado e eliminando o ruído. Acompanhamos-te desde a definição do perfil até à assinatura.</p>
+              <div class="hp-service-tags">
+                <span>Pesquisa</span>
+                <span>Seleção</span>
+                <span>Visitas</span>
+                <span>Negociação</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-service" data-service id="vender">
+            <div class="hp-service-top">
+              <span class="hp-service-number">02</span>
+              <h3>Venda</h3>
+              <span class="hp-service-arrow">↗</span>
+            </div>
+            <div class="hp-service-hidden">
+              <p>Posicionamos o teu imóvel, definimos a estratégia certa e apresentamo-lo de forma a captar atenção e criar valor.</p>
+              <div class="hp-service-tags">
+                <span>Avaliação</span>
+                <span>Estratégia</span>
+                <span>Marketing</span>
+                <span>Negociação</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-service" data-service>
+            <div class="hp-service-top">
+              <span class="hp-service-number">03</span>
+              <h3>Investimento</h3>
+              <span class="hp-service-arrow">↗</span>
+            </div>
+            <div class="hp-service-hidden">
+              <p>Analisamos oportunidades com uma visão de longo prazo, cruzando localização, valor, potencial e contexto de mercado.</p>
+              <div class="hp-service-tags">
+                <span>Oportunidades</span>
+                <span>Análise</span>
+                <span>Rentabilidade</span>
+                <span>Estratégia</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-service" data-service>
+            <div class="hp-service-top">
+              <span class="hp-service-number">04</span>
+              <h3>Arrendamento</h3>
+              <span class="hp-service-arrow">↗</span>
+            </div>
+            <div class="hp-service-hidden">
+              <p>Tratamos de todo o processo para que encontrares ou colocares um imóvel no mercado seja simples, rápido e seguro.</p>
+              <div class="hp-service-tags">
+                <span>Procura</span>
+                <span>Seleção</span>
+                <span>Documentação</span>
+                <span>Acompanhamento</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-service" data-service>
+            <div class="hp-service-top">
+              <span class="hp-service-number">05</span>
+              <h3>Acompanhamento</h3>
+              <span class="hp-service-arrow">↗</span>
+            </div>
+            <div class="hp-service-hidden">
+              <p>Estamos presentes onde mais importa: documentação, negociação, prazos e todos os detalhes que transformam a tua decisão num processo tranquilo.</p>
+              <div class="hp-service-tags">
+                <span>Documentação</span>
+                <span>Coordenação</span>
+                <span>Processo</span>
+                <span>Escritura</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="hp-why" data-hp-why id="porque-nos">
+      <div class="hp-why-sticky">
+
+        <div class="hp-why-top">
+          <span class="hp-why-eyebrow">MANIFESTO</span>
+          <span class="hp-why-small">SOMOS A IMOBILIÁRIA DO SÉCULO XXI</span>
+        </div>
+
+        <div class="hp-why-statement">
+          <div class="hp-why-line"><span data-why-word>Trazemos</span> <span data-why-word>modernidade</span></div>
+          <div class="hp-why-line"><span data-why-word>e</span> <span class="gold" data-why-word>tecnologia</span></div>
+          <div class="hp-why-line"><span class="muted" data-why-word>ao</span></div>
+          <div class="hp-why-line"><span data-why-word>imobiliário.</span></div>
+        </div>
+
+        <div class="hp-why-reasons">
+          <div class="hp-why-reason" data-why-reason>
+            <span>01</span>
+            <div>
+              <strong>Ajudar e contribuir</strong>
+              <p>Acreditamos em ajudar, em contribuir, em partilhar e em crescer contigo, a cada passo do processo.</p>
+            </div>
+          </div>
+          <div class="hp-why-reason" data-why-reason>
+            <span>02</span>
+            <div>
+              <strong>Trabalho em equipa</strong>
+              <p>Uma equipa é uma família, uma tribo — e é isso que estamos a construir para te acompanhar.</p>
+            </div>
+          </div>
+          <div class="hp-why-reason" data-why-reason>
+            <span>03</span>
+            <div>
+              <strong>Ambição com propósito</strong>
+              <p>Uma tribo de jovens empreendedores, com sede de sucesso, a provar que o imobiliário pode ser feito de outra forma.</p>
+            </div>
+          </div>
+          <div class="hp-why-reason" data-why-reason>
+            <span>04</span>
+            <div>
+              <strong>Presentes até ao fim</strong>
+              <p>O negócio pode terminar numa escritura. O nosso acompanhamento não precisa de terminar aí.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hp-why-bottom">
+          <span>MAIS DO QUE UMA AGÊNCIA</span>
+          <div class="hp-why-line-small"><i></i></div>
+          <span>UMA TRIBO AO TEU LADO</span>
+        </div>
+
+      </div>
+    </section>
+
+  </section>
+
+  <section class="hp-featured-properties" data-hp-featured-properties id="imoveis">
+
+    <div class="hp-featured-track">
+
+      <div class="hp-featured-stage">
+
+        <div class="hp-featured-header">
+          <div class="hp-featured-eyebrow">IMÓVEIS EM DESTAQUE</div>
+          <div class="hp-featured-count">
+            <span class="current">01</span>
+            <span>/</span>
+            <span>05</span>
+          </div>
+        </div>
+
+        <div class="hp-featured-properties">
+
+          <article class="hp-featured-property" data-property="0" style="--property-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2800&q=92');">
+            <div class="hp-featured-image"></div>
+            <div class="hp-featured-image-shade"></div>
+            <div class="hp-featured-property-content">
+              <div class="hp-featured-property-index">01</div>
+              <div class="hp-featured-property-info">
+                <div class="hp-featured-location">PORTO · FOZ</div>
+                <h2>Casa do Atlântico</h2>
+                <p class="hp-featured-description">Uma residência contemporânea pensada para aproveitares a luz, o espaço e a proximidade do mar.</p>
+                <div class="hp-featured-meta">
+                  <span>4 QUARTOS</span>
+                  <span>3 BANHOS</span>
+                  <span>286 M²</span>
+                </div>
+                <div class="hp-featured-footer">
+                  <strong>€ 1.250.000</strong>
+                  <a href="#" class="hp-featured-link"><span>Saber mais</span><b>↗</b></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-featured-property" data-property="1" style="--property-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2800&q=92');">
+            <div class="hp-featured-image"></div>
+            <div class="hp-featured-image-shade"></div>
+            <div class="hp-featured-property-content">
+              <div class="hp-featured-property-index">02</div>
+              <div class="hp-featured-property-info">
+                <div class="hp-featured-location">LISBOA · ESTRELA</div>
+                <h2>Apartamento Estrela</h2>
+                <p class="hp-featured-description">Arquitetura clássica, interiores contemporâneos e uma relação invulgar entre luz e matéria.</p>
+                <div class="hp-featured-meta">
+                  <span>3 QUARTOS</span>
+                  <span>2 BANHOS</span>
+                  <span>178 M²</span>
+                </div>
+                <div class="hp-featured-footer">
+                  <strong>€ 895.000</strong>
+                  <a href="#" class="hp-featured-link"><span>Saber mais</span><b>↗</b></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-featured-property" data-property="2" style="--property-image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2800&q=92');">
+            <div class="hp-featured-image"></div>
+            <div class="hp-featured-image-shade"></div>
+            <div class="hp-featured-property-content">
+              <div class="hp-featured-property-index">03</div>
+              <div class="hp-featured-property-info">
+                <div class="hp-featured-location">CASCAIS · GUINCHO</div>
+                <h2>Villa Guincho</h2>
+                <p class="hp-featured-description">Privacidade, arquitetura e natureza numa moradia desenhada para viveres dentro e fora de casa.</p>
+                <div class="hp-featured-meta">
+                  <span>5 QUARTOS</span>
+                  <span>4 BANHOS</span>
+                  <span>342 M²</span>
+                </div>
+                <div class="hp-featured-footer">
+                  <strong>€ 1.680.000</strong>
+                  <a href="#" class="hp-featured-link"><span>Saber mais</span><b>↗</b></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-featured-property" data-property="3" style="--property-image:url('https://images.unsplash.com/photo-1600047509807-ba8f99d5cdde?auto=format&fit=crop&w=2800&q=92');">
+            <div class="hp-featured-image"></div>
+            <div class="hp-featured-image-shade"></div>
+            <div class="hp-featured-property-content">
+              <div class="hp-featured-property-index">04</div>
+              <div class="hp-featured-property-info">
+                <div class="hp-featured-location">BRAGA · BOM JESUS</div>
+                <h2>Casa da Serra</h2>
+                <p class="hp-featured-description">Uma casa de linhas depuradas, rodeada por verde e com uma escala pensada para a tua vida em família.</p>
+                <div class="hp-featured-meta">
+                  <span>4 QUARTOS</span>
+                  <span>3 BANHOS</span>
+                  <span>312 M²</span>
+                </div>
+                <div class="hp-featured-footer">
+                  <strong>€ 735.000</strong>
+                  <a href="#" class="hp-featured-link"><span>Saber mais</span><b>↗</b></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-featured-property" data-property="4" style="--property-image:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=2800&q=92');">
+            <div class="hp-featured-image"></div>
+            <div class="hp-featured-image-shade"></div>
+            <div class="hp-featured-property-content">
+              <div class="hp-featured-property-index">05</div>
+              <div class="hp-featured-property-info">
+                <div class="hp-featured-location">VILAMOURA · ALGARVE</div>
+                <h2>Villa Atlântica</h2>
+                <p class="hp-featured-description">Volumes abertos, piscina e uma relação contínua com a paisagem algarvia.</p>
+                <div class="hp-featured-meta">
+                  <span>5 QUARTOS</span>
+                  <span>5 BANHOS</span>
+                  <span>398 M²</span>
+                </div>
+                <div class="hp-featured-footer">
+                  <strong>€ 1.950.000</strong>
+                  <a href="#" class="hp-featured-link"><span>Saber mais</span><b>↗</b></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="hp-featured-dots">
+          <span class="active" data-featured-dot="0"></span>
+          <span data-featured-dot="1"></span>
+          <span data-featured-dot="2"></span>
+          <span data-featured-dot="3"></span>
+          <span data-featured-dot="4"></span>
+        </div>
+
+        <div class="hp-featured-scroll">
+          <span>SCROLL</span>
+          <i></i>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="hp-testimonials" id="testemunhos">
+    <div class="hp-testimonials-bgtext" aria-hidden="true">CONFIANÇA</div>
+    <div class="hp-testimonials-inner">
+      <div class="hp-testimonials-head">
+        <span class="hp-testimonials-eyebrow">O QUE DIZEM OS NOSSOS CLIENTES</span>
+        <h2 class="hp-testimonials-title">Histórias reais de<br>quem confiou em nós</h2>
+      </div>
+
+      <div class="hp-testi-row" data-testi-row>
+        <div class="hp-testi-track" data-testi-track>
+
+          <div class="hp-testi-mcard">
+            <span class="hp-testi-mcard-quotemark">&ldquo;</span>
+            <blockquote class="hp-testi-mcard-quote">Encontrámos a casa certa em três semanas, depois de meses perdidos noutros portais. Perceberam logo o que procurávamos.</blockquote>
+            <footer class="hp-testi-mcard-footer">
+              <span class="hp-testi-mcard-avatar">MS</span>
+              <div class="hp-testi-mcard-person">
+                <strong>Mariana Santos</strong>
+                <span>Compradora — Cascais</span>
+              </div>
+              <div class="hp-testi-mcard-rating" aria-label="5 de 5 estrelas">★★★★★</div>
+            </footer>
+          </div>
+
+          <div class="hp-testi-mcard">
+            <span class="hp-testi-mcard-quotemark">&ldquo;</span>
+            <blockquote class="hp-testi-mcard-quote">Venderam a nossa moradia acima do valor que esperávamos, com um processo de negociação muito bem conduzido.</blockquote>
+            <footer class="hp-testi-mcard-footer">
+              <span class="hp-testi-mcard-avatar">JP</span>
+              <div class="hp-testi-mcard-person">
+                <strong>João Pereira</strong>
+                <span>Vendedor — Sintra</span>
+              </div>
+              <div class="hp-testi-mcard-rating" aria-label="5 de 5 estrelas">★★★★★</div>
+            </footer>
+          </div>
+
+          <div class="hp-testi-mcard">
+            <span class="hp-testi-mcard-quotemark">&ldquo;</span>
+            <blockquote class="hp-testi-mcard-quote">A análise de rentabilidade antes da compra do investimento foi o que nos convenceu a avançar. Números claros, sem empolgação vazia.</blockquote>
+            <footer class="hp-testi-mcard-footer">
+              <span class="hp-testi-mcard-avatar">RC</span>
+              <div class="hp-testi-mcard-person">
+                <strong>Rita Carvalho</strong>
+                <span>Investidora — Lisboa</span>
+              </div>
+              <div class="hp-testi-mcard-rating" aria-label="5 de 5 estrelas">★★★★★</div>
+            </footer>
+          </div>
+
+          <div class="hp-testi-mcard" aria-hidden="true">
+            <span class="hp-testi-mcard-quotemark">&ldquo;</span>
+            <blockquote class="hp-testi-mcard-quote">Encontrámos a casa certa em três semanas, depois de meses perdidos noutros portais. Perceberam logo o que procurávamos.</blockquote>
+            <footer class="hp-testi-mcard-footer">
+              <span class="hp-testi-mcard-avatar">MS</span>
+              <div class="hp-testi-mcard-person">
+                <strong>Mariana Santos</strong>
+                <span>Compradora — Cascais</span>
+              </div>
+              <div class="hp-testi-mcard-rating" aria-label="5 de 5 estrelas">★★★★★</div>
+            </footer>
+          </div>
+          <div class="hp-testi-mcard" aria-hidden="true">
+            <span class="hp-testi-mcard-quotemark">&ldquo;</span>
+            <blockquote class="hp-testi-mcard-quote">Venderam a nossa moradia acima do valor que esperávamos, com um processo de negociação muito bem conduzido.</blockquote>
+            <footer class="hp-testi-mcard-footer">
+              <span class="hp-testi-mcard-avatar">JP</span>
+              <div class="hp-testi-mcard-person">
+                <strong>João Pereira</strong>
+                <span>Vendedor — Sintra</span>
+              </div>
+              <div class="hp-testi-mcard-rating" aria-label="5 de 5 estrelas">★★★★★</div>
+            </footer>
+          </div>
+          <div class="hp-testi-mcard" aria-hidden="true">
+            <span class="hp-testi-mcard-quotemark">&ldquo;</span>
+            <blockquote class="hp-testi-mcard-quote">A análise de rentabilidade antes da compra do investimento foi o que nos convenceu a avançar. Números claros, sem empolgação vazia.</blockquote>
+            <footer class="hp-testi-mcard-footer">
+              <span class="hp-testi-mcard-avatar">RC</span>
+              <div class="hp-testi-mcard-person">
+                <strong>Rita Carvalho</strong>
+                <span>Investidora — Lisboa</span>
+              </div>
+              <div class="hp-testi-mcard-rating" aria-label="5 de 5 estrelas">★★★★★</div>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+      <div class="hp-testi-row hp-testi-row--reverse" data-testi-row>
+        <div class="hp-testi-track" data-testi-track>
+
+          <div class="hp-testi-mcard">
+            <span class="hp-testi-mcard-quotemark">&ldquo;</span>
+            <blockquote class="hp-testi-mcard-quote">Acompanharam-nos até à escritura, incluindo o financiamento — coisa que nenhuma outra agência se tinha disposto a fazer.</blockquote>
+            <footer class="hp-testi-mcard-footer">
+              <span class="hp-testi-mcard-avatar">TA</span>
+              <div class="hp-testi-mcard-person">
+                <strong>Tomás Almeida</strong>
+                <span>Comprador — Porto</span>
+              </div>
+              <div class="hp-testi-mcard-rating" aria-label="4 de 5 estrelas">★★★★☆</div>
+            </footer>
+          </div>
+
+          <div class="hp-testi-mcard">
+            <span class="hp-testi-mcard-quotemark">&ldquo;</span>
+            <blockquote class="hp-testi-mcard-quote">Transparência total sobre o estado do imóvel, sem surpresas depois da escritura. Recomendo sem hesitar.</blockquote>
+            <footer class="hp-testi-mcard-footer">
+              <span class="hp-testi-mcard-avatar">CF</span>
+              <div class="hp-testi-mcard-person">
+                <strong>Catarina Fonseca</strong>
+                <span>Compradora — Algarve</span>
+              </div>
+              <div class="hp-testi-mcard-rating" aria-label="5 de 5 estrelas">★★★★★</div>
+            </footer>
+          </div>
+
+          <div class="hp-testi-mcard">
+            <span class="hp-testi-mcard-quotemark">&ldquo;</span>
+            <blockquote class="hp-testi-mcard-quote">Continuaram a ajudar-nos depois da escritura — resolveram um problema com a certidão predial em 48 horas.</blockquote>
+            <footer class="hp-testi-mcard-footer">
+              <span class="hp-testi-mcard-avatar">MR</span>
+              <div class="hp-testi-mcard-person">
+                <strong>Miguel Ramos</strong>
+                <span>Comprador — Lisboa</span>
+              </div>
+              <div class="hp-testi-mcard-rating" aria-label="5 de 5 estrelas">★★★★★</div>
+            </footer>
+          </div>
+
+          <div class="hp-testi-mcard" aria-hidden="true">
+            <span class="hp-testi-mcard-quotemark">&ldquo;</span>
+            <blockquote class="hp-testi-mcard-quote">Acompanharam-nos até à escritura, incluindo o financiamento — coisa que nenhuma outra agência se tinha disposto a fazer.</blockquote>
+            <footer class="hp-testi-mcard-footer">
+              <span class="hp-testi-mcard-avatar">TA</span>
+              <div class="hp-testi-mcard-person">
+                <strong>Tomás Almeida</strong>
+                <span>Comprador — Porto</span>
+              </div>
+              <div class="hp-testi-mcard-rating" aria-label="4 de 5 estrelas">★★★★☆</div>
+            </footer>
+          </div>
+          <div class="hp-testi-mcard" aria-hidden="true">
+            <span class="hp-testi-mcard-quotemark">&ldquo;</span>
+            <blockquote class="hp-testi-mcard-quote">Transparência total sobre o estado do imóvel, sem surpresas depois da escritura. Recomendo sem hesitar.</blockquote>
+            <footer class="hp-testi-mcard-footer">
+              <span class="hp-testi-mcard-avatar">CF</span>
+              <div class="hp-testi-mcard-person">
+                <strong>Catarina Fonseca</strong>
+                <span>Compradora — Algarve</span>
+              </div>
+              <div class="hp-testi-mcard-rating" aria-label="5 de 5 estrelas">★★★★★</div>
+            </footer>
+          </div>
+          <div class="hp-testi-mcard" aria-hidden="true">
+            <span class="hp-testi-mcard-quotemark">&ldquo;</span>
+            <blockquote class="hp-testi-mcard-quote">Continuaram a ajudar-nos depois da escritura — resolveram um problema com a certidão predial em 48 horas.</blockquote>
+            <footer class="hp-testi-mcard-footer">
+              <span class="hp-testi-mcard-avatar">MR</span>
+              <div class="hp-testi-mcard-person">
+                <strong>Miguel Ramos</strong>
+                <span>Comprador — Lisboa</span>
+              </div>
+              <div class="hp-testi-mcard-rating" aria-label="5 de 5 estrelas">★★★★★</div>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="rx-simple-story" data-rx-simple-story>
+
+    <div class="rx-simple-story-track">
+
+      <div class="rx-simple-story-stage">
+
+        <div class="rx-simple-story-top">
+          <div class="rx-simple-story-left">
+            <span class="gold">03</span>
+            <i></i>
+            <span>A NOSSA FORMA DE VER</span>
+          </div>
+          <span>IMOBILIÁRIA · PESSOAS · LUGARES</span>
+        </div>
+
+        <main class="rx-simple-story-main">
+
+          <div class="rx-simple-scene active" data-scene="0">
+            <div class="rx-simple-small">MAIS DO QUE IMÓVEIS</div>
+            <h2>Não vendemos<em>casas.</em></h2>
+            <div class="rx-simple-sub">É mais do que isso.</div>
+          </div>
+
+          <div class="rx-simple-scene" data-scene="1">
+            <div class="rx-simple-small">UMA CASA</div>
+            <h2 class="medium">É mais do que<em>quatro paredes.</em></h2>
+            <div class="rx-simple-sub">É o lugar onde a tua história acontece.</div>
+          </div>
+
+          <div class="rx-simple-scene" data-scene="2">
+            <div class="rx-simple-small">PRIMEIRO</div>
+            <h2>Onde começa<em>uma família.</em></h2>
+            <div class="rx-simple-sub">As primeiras memórias de um lugar que passa a ser teu.</div>
+          </div>
+
+          <div class="rx-simple-scene" data-scene="3">
+            <div class="rx-simple-small">TAMBÉM</div>
+            <h2>Onde cresce<em>um negócio.</em></h2>
+            <div class="rx-simple-sub">O espaço onde a tua ideia ganha forma.</div>
+          </div>
+
+          <div class="rx-simple-scene" data-scene="4">
+            <div class="rx-simple-small">E ÀS VEZES</div>
+            <h2>Onde começa<em>uma nova vida.</em></h2>
+            <div class="rx-simple-sub">Uma mudança. Um novo capítulo. Um novo começo.</div>
+          </div>
+
+          <div class="rx-simple-scene final" data-scene="5">
+            <div class="rx-simple-small">POR ISSO</div>
+            <h2>Entendemos<em>pessoas.</em></h2>
+            <div class="rx-simple-final-line">
+              <span></span>
+              <strong>Só depois procuramos a tua casa.</strong>
+            </div>
+          </div>
+
+        </main>
+
+        <div class="rx-simple-index">
+          <span class="active">01</span>
+          <span>02</span>
+          <span>03</span>
+          <span>04</span>
+          <span>05</span>
+          <span>06</span>
+          <i></i>
+        </div>
+
+        <div class="rx-simple-bottom">
+          <span>UMA CASA É O PRINCÍPIO.</span>
+          <span>SCROLL</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="hp-process-stack-final" data-hp-process-stack-final id="processo">
+
+    <div class="hp-process-stack-final-track">
+
+      <div class="hp-process-stack-final-stage">
+
+        <div class="hp-process-stack-final-ui">
+          <div class="hp-process-stack-final-title">O PROCESSO</div>
+          <div class="hp-process-stack-final-counter">
+            <span class="current">00</span>
+            <span class="slash">/</span>
+            <span>05</span>
+          </div>
+        </div>
+
+        <div class="hp-process-stack-final-cards">
+
+          <article class="hp-process-stack-final-card" data-card="0" style="--image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=82');">
+            <div class="hp-process-stack-final-image"></div>
+            <div class="hp-process-stack-final-gradient"></div>
+            <div class="hp-process-stack-final-glass"></div>
+            <div class="hp-process-stack-final-content">
+              <div class="hp-process-stack-final-top">
+                <div class="hp-process-stack-final-meta">PROCESSO<b>00</b></div>
+                <h2>Processo</h2>
+              </div>
+              <div class="hp-process-stack-final-bottom">
+                <div class="hp-process-stack-final-label">INTRODUÇÃO</div>
+                <div class="hp-process-stack-final-copy">
+                  <h3>Uma das melhores formas de reduzires a tua ansiedade.</h3>
+                  <p>Comprar uma casa não precisa de ser complicado. Cinco passos, sempre com alguém a acompanhar-te — do primeiro contacto à escritura.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-process-stack-final-card" data-card="1" style="--image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1920&q=82');">
+            <div class="hp-process-stack-final-image"></div>
+            <div class="hp-process-stack-final-gradient"></div>
+            <div class="hp-process-stack-final-glass"></div>
+            <div class="hp-process-stack-final-content">
+              <div class="hp-process-stack-final-top">
+                <div class="hp-process-stack-final-meta">PROCESSO<b>01</b></div>
+                <h2>Falamos</h2>
+              </div>
+              <div class="hp-process-stack-final-bottom">
+                <div class="hp-process-stack-final-label">01 — CONHECER</div>
+                <div class="hp-process-stack-final-copy">
+                  <h3>Percebemos o que procuras.</h3>
+                  <ul>
+                    <li>Reunião inicial, presencial ou por vídeo</li>
+                    <li>Perfil de procura definido em conjunto</li>
+                    <li>Sem compromisso nem custos</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-process-stack-final-card" data-card="2" style="--image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1920&q=82');">
+            <div class="hp-process-stack-final-image"></div>
+            <div class="hp-process-stack-final-gradient"></div>
+            <div class="hp-process-stack-final-glass"></div>
+            <div class="hp-process-stack-final-content">
+              <div class="hp-process-stack-final-top">
+                <div class="hp-process-stack-final-meta">PROCESSO<b>02</b></div>
+                <h2>Encontramos</h2>
+              </div>
+              <div class="hp-process-stack-final-bottom">
+                <div class="hp-process-stack-final-label">02 — PESQUISA</div>
+                <div class="hp-process-stack-final-copy">
+                  <h3>Procuramos para que não tenhas de procurar.</h3>
+                  <ul>
+                    <li>Acesso a portefólio exclusivo</li>
+                    <li>Pré-seleção alinhada ao teu briefing</li>
+                    <li>Visitas agendadas em 48 horas</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-process-stack-final-card" data-card="3" style="--image:url('https://images.unsplash.com/photo-1600047509807-ba8f99d5cdde?auto=format&fit=crop&w=1920&q=82');">
+            <div class="hp-process-stack-final-image"></div>
+            <div class="hp-process-stack-final-gradient"></div>
+            <div class="hp-process-stack-final-glass"></div>
+            <div class="hp-process-stack-final-content">
+              <div class="hp-process-stack-final-top">
+                <div class="hp-process-stack-final-meta">PROCESSO<b>03</b></div>
+                <h2>Avaliamos</h2>
+              </div>
+              <div class="hp-process-stack-final-bottom">
+                <div class="hp-process-stack-final-label">03 — ANÁLISE</div>
+                <div class="hp-process-stack-final-copy">
+                  <h3>Não te mostramos apenas casas. Mostramos oportunidades.</h3>
+                  <ul>
+                    <li>Análise técnica e jurídica do imóvel</li>
+                    <li>Comparação direta com o mercado</li>
+                    <li>Relatório claro, sem jargão</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-process-stack-final-card" data-card="4" style="--image:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1920&q=82');">
+            <div class="hp-process-stack-final-image"></div>
+            <div class="hp-process-stack-final-gradient"></div>
+            <div class="hp-process-stack-final-glass"></div>
+            <div class="hp-process-stack-final-content">
+              <div class="hp-process-stack-final-top">
+                <div class="hp-process-stack-final-meta">PROCESSO<b>04</b></div>
+                <h2>Negociamos</h2>
+              </div>
+              <div class="hp-process-stack-final-bottom">
+                <div class="hp-process-stack-final-label">04 — NEGOCIAÇÃO</div>
+                <div class="hp-process-stack-final-copy">
+                  <h3>Tratamos a negociação como se fosse nossa.</h3>
+                  <ul>
+                    <li>Estratégia definida contigo antes de negociar</li>
+                    <li>Comunicação direta com a outra parte</li>
+                    <li>Nunca decides sob pressão</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-process-stack-final-card" data-card="5" style="--image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=82');">
+            <div class="hp-process-stack-final-image"></div>
+            <div class="hp-process-stack-final-gradient"></div>
+            <div class="hp-process-stack-final-glass"></div>
+            <div class="hp-process-stack-final-content">
+              <div class="hp-process-stack-final-top">
+                <div class="hp-process-stack-final-meta">PROCESSO<b>05</b></div>
+                <h2>Concretizamos</h2>
+              </div>
+              <div class="hp-process-stack-final-bottom">
+                <div class="hp-process-stack-final-label">05 — CONCRETIZAÇÃO</div>
+                <div class="hp-process-stack-final-copy">
+                  <h3>Da tua decisão às tuas chaves.</h3>
+                  <p>Continuamos contigo até ao último passo. Porque uma boa compra não termina quando encontras a casa certa.</p>
+                  <a href="#" class="hp-process-stack-final-button"><span>Falar connosco</span><b>↗</b></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="hp-process-stack-final-dots">
+          <span data-dot="0"></span>
+          <span data-dot="1"></span>
+          <span data-dot="2"></span>
+          <span data-dot="3"></span>
+          <span data-dot="4"></span>
+          <span data-dot="5"></span>
+        </div>
+
+        <div class="hp-process-stack-final-scroll">
+          <span>SCROLL</span>
+          <i></i>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="hp-news" id="faq">
+    <div class="hp-news-header">
+      <div class="hp-news-header-text">
+        <span class="hp-news-watermark" aria-hidden="true">NEWS</span>
+        <span class="hp-news-eyebrow">NEWSLETTER</span>
+        <h2 class="hp-news-heading">As últimas novidades<br>do mercado</h2>
+      </div>
+      <div class="hp-news-header-side">
+        <p class="hp-news-subtitle">Ainda tens dúvidas? Entra em contacto:</p>
+        <div class="hp-news-contacts">
+          <a class="hp-news-contact" href="tel:+351210000000">
+            <span class="hp-news-contact-icon" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <span>+351 210 000 000</span>
+          </a>
+          <a class="hp-news-contact" href="mailto:ola@livew.pt">
+            <span class="hp-news-contact-icon" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <span>ola@livew.pt</span>
+          </a>
+        </div>
+        <div class="hp-news-arrows">
+          <button type="button" class="hp-news-arrow" data-news-prev aria-label="Notícia anterior">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+          </button>
+          <button type="button" class="hp-news-arrow" data-news-next aria-label="Notícia seguinte">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hp-news-carousel">
+      <div class="hp-news-track" data-news-track>
+
+        <article class="hp-news-card">
+          <a href="#" class="hp-news-image" style="--news-image:url('https://images.egorealestate.com/Z512x384/OAYES/Wnone/S5/C9811/WP19817/Tphoto/ID694d0000-0000-0500-0000-000011b7a4ad.jpg.webp');" aria-hidden="true"></a>
+          <div class="hp-news-body">
+            <div class="hp-news-meta"><span class="hp-news-category">Notícias</span><span class="hp-news-date">18 JUL 2023</span></div>
+            <h3 class="hp-news-title"><a href="#">As rendas das casas registaram um aumento de 4,6% no mês de junho.</a></h3>
+            <p class="hp-news-excerpt">As rendas continuam a subir a um ritmo superior à inflação — em junho, o aumento foi de 4,6% face ao ano anterior.</p>
+          </div>
+        </article>
+
+        <article class="hp-news-card">
+          <a href="#" class="hp-news-image" style="--news-image:url('https://images.egorealestate.com/Z512x384/OAYES/Wnone/S5/C9811/WP19806/Tphoto/ID5e4d0000-0000-0500-0000-000011b68d88.jpg.webp');" aria-hidden="true"></a>
+          <div class="hp-news-body">
+            <div class="hp-news-meta"><span class="hp-news-category">Notícias</span><span class="hp-news-date">17 JUL 2023</span></div>
+            <h3 class="hp-news-title"><a href="#">Mercado imobiliário português continua a apresentar aumento nos preços das casas, com destaque para uma subida ainda mais acentuada em Lisboa</a></h3>
+            <p class="hp-news-excerpt">Os preços das casas vendidas em Portugal voltaram a subir em 2023, com um aumento de 7,6% — e uma subida ainda mais acentuada em Lisboa.</p>
+          </div>
+        </article>
+
+        <article class="hp-news-card">
+          <a href="#" class="hp-news-image" style="--news-image:url('https://images.egorealestate.com/Z512x384/OAYES/Wnone/S5/C9811/WP19367/Tphoto/IDa74b0000-0000-0500-0000-0000118fbf85.jpg.webp');" aria-hidden="true"></a>
+          <div class="hp-news-body">
+            <div class="hp-news-meta"><span class="hp-news-category">Imobiliário</span><span class="hp-news-date">15 JUN 2023</span></div>
+            <h3 class="hp-news-title"><a href="#">Braga expande zonas de reabilitação urbana e intensifica benefícios fiscais</a></h3>
+            <p class="hp-news-excerpt">Proprietários em Braga passam a beneficiar de uma redução do IVA de 23% para 6% e de descidas no IMI, IMT e IRS.</p>
+          </div>
+        </article>
+
+        <article class="hp-news-card">
+          <a href="#" class="hp-news-image" style="--news-image:url('https://images.egorealestate.com/Z512x384/OAYES/Wnone/S5/C9811/WP19366/Tphoto/IDa64b0000-0000-0500-0000-0000118fbd2a.jpg.webp');" aria-hidden="true"></a>
+          <div class="hp-news-body">
+            <div class="hp-news-meta"><span class="hp-news-category">Notícias</span><span class="hp-news-date">15 JUN 2023</span></div>
+            <h3 class="hp-news-title"><a href="#">A restituição do imposto sobre ganhos de capital a não residentes só é possível mediante apresentação de uma reclamação</a></h3>
+            <p class="hp-news-excerpt">As regras sobre os lucros obtidos com a venda de imóveis mudaram — sem reclamação junto das Finanças, não há restituição para não residentes.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="hp-news-footer">
+      <div class="hp-news-dots" data-news-dots>
+        <span class="active" data-news-dot="0"></span>
+        <span data-news-dot="1"></span>
+        <span data-news-dot="2"></span>
+        <span data-news-dot="3"></span>
+      </div>
+      <a href="#" class="hp-news-more-btn"><span>Ver mais</span><b>↗</b></a>
+    </div>
+  </section>
+
+  <section class="hp-cta" id="contacto">
+    <div class="hp-cta-inner">
+      <span class="hp-cta-eyebrow">VAMOS CONVERSAR</span>
+      <h2 class="hp-cta-title">Pronto para dares<br>o próximo passo?</h2>
+      <p class="hp-cta-desc">Fala connosco hoje e começa a construir a tua próxima decisão imobiliária com quem te acompanha do primeiro contacto à escritura.</p>
+      <div class="hp-cta-actions">
+        <a href="#" class="hp-cta-btn hp-cta-btn-primary">
+          <span>Falar com um especialista</span>
+          <b>↗</b>
+        </a>
+        <a href="#" class="hp-cta-btn hp-cta-btn-secondary">
+          <span>Marcar avaliação gratuita</span>
+        </a>
+      </div>
+
+      <form class="hp-cta-form" onsubmit="return false;">
+        <div class="hp-cta-form-row">
+          <div class="hp-cta-field">
+            <label for="hp-cta-nome">Nome</label>
+            <input type="text" id="hp-cta-nome" name="nome" placeholder="O teu nome" autocomplete="name" required>
+          </div>
+          <div class="hp-cta-field">
+            <label for="hp-cta-email">Email</label>
+            <input type="email" id="hp-cta-email" name="email" placeholder="ola@email.com" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="hp-cta-form-row">
+          <div class="hp-cta-field">
+            <label for="hp-cta-telefone">Telefone</label>
+            <input type="tel" id="hp-cta-telefone" name="telefone" placeholder="+351 000 000 000" autocomplete="tel">
+          </div>
+          <div class="hp-cta-field">
+            <label for="hp-cta-assunto">O que procuras</label>
+            <select id="hp-cta-assunto" name="assunto">
+              <option value="comprar">Comprar</option>
+              <option value="vender">Vender</option>
+              <option value="investir">Investir</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+        </div>
+        <div class="hp-cta-field hp-cta-field--full">
+          <label for="hp-cta-mensagem">Mensagem</label>
+          <textarea id="hp-cta-mensagem" name="mensagem" rows="4" placeholder="Conta-nos um pouco sobre o que procuras…"></textarea>
+        </div>
+        <button type="submit" class="hp-cta-form-submit">
+          <span>Enviar mensagem</span>
+          <b>↗</b>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="hp-footer">
+    <canvas class="hp-footer-bg" data-hp-footer-canvas aria-hidden="true"></canvas>
+    <div class="hp-footer-content">
+
+      <div class="hp-footer-grid">
+        <div class="hp-footer-col hp-footer-col--about">
+          <h3 class="hp-footer-heading">Sobre</h3>
+          <p class="hp-footer-text">Acompanhamos-te em cada etapa da tua compra, venda ou investimento imobiliário — sem atalhos, sem pressa desnecessária.</p>
+          <div class="hp-footer-social">
+            <a href="#" class="hp-footer-icon-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+            <a href="#" class="hp-footer-icon-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21H9z"/></svg></a>
+            <a href="#" class="hp-footer-icon-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.45 2.9h-2.33V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="hp-footer-col">
+          <h3 class="hp-footer-heading">Mapa do site</h3>
+          <a href="#heroParallax1" class="hp-footer-link" data-hp-footer-link>Início</a>
+          <a href="#servicos" class="hp-footer-link" data-hp-footer-link>Serviços</a>
+          <a href="#porque-nos" class="hp-footer-link" data-hp-footer-link>Manifesto</a>
+          <a href="#imoveis" class="hp-footer-link" data-hp-footer-link>Imóveis</a>
+          <a href="#processo" class="hp-footer-link" data-hp-footer-link>Processo</a>
+          <a href="#testemunhos" class="hp-footer-link" data-hp-footer-link>Testemunhos</a>
+          <a href="#faq" class="hp-footer-link" data-hp-footer-link>Newsletter</a>
+          <a href="#contacto" class="hp-footer-link" data-hp-footer-link>Fala connosco</a>
+        </div>
+
+        <div class="hp-footer-col">
+          <h3 class="hp-footer-heading">Páginas legais</h3>
+          <a href="#" class="hp-footer-link">Política de Privacidade</a>
+          <a href="#" class="hp-footer-link">Termos de Serviço</a>
+          <a href="#" class="hp-footer-link">Cookies</a>
+        </div>
+
+        <div class="hp-footer-col">
+          <h3 class="hp-footer-heading">Contactos</h3>
+          <a href="#" class="hp-footer-link">Marcar visita</a>
+          <a href="mailto:ola@livew.pt" class="hp-footer-link">ola@livew.pt</a>
+          <a href="tel:+351210000000" class="hp-footer-link">+351 210 000 000</a>
+        </div>
+      </div>
+
+      <div class="hp-footer-bottom">
+        <span>© 2026 LIVEW. Todos os direitos reservados.</span>
+        <span class="hp-footer-location">
+          <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+          Lisboa · Porto · Algarve
+        </span>
+      </div>
+
+      <div class="hp-footer-word" aria-hidden="true">LIVEW</div>
+    </div>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

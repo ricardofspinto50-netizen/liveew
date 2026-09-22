@@ -150,8 +150,9 @@
       gsap.ticker.lagSmoothing(0);
     }
 
+    if (sticky) {
     root.classList.add('hp-hero-native');
-    
+
     gsap.set(fgClouds, { yPercent: HP_CONFIG.fgClouds.startPercent });
     if (cloudWipe) { gsap.set(cloudWipe, { yPercent: 100 }); }
     if (mobileGround) { gsap.set(mobileGround, { y: 0 }); }
@@ -240,6 +241,7 @@
         };
       }
     );
+    }
 
     var statsSticky = root.querySelector('[data-hp-stats-sticky]');
     if (statsSticky) {
@@ -287,33 +289,68 @@
       });
     }
 
-    // Same full-screen properties; vertical stacking replaces horizontal travel.
+    // Real slider/carousel: swipe, drag, arrows and dots — no scroll-jacking.
     var featured = root.querySelector('[data-hp-featured-properties]');
     if (featured) {
-      var fTrack = featured.querySelector('.hp-featured-track');
-      var fStage = featured.querySelector('.hp-featured-stage');
+      var fTrackEl = featured.querySelector('[data-featured-track]');
+      var fViewport = featured.querySelector('.hp-featured-viewport');
       var fCards = Array.from(featured.querySelectorAll('.hp-featured-property'));
       var fDots = Array.from(featured.querySelectorAll('[data-featured-dot]'));
       var fCount = featured.querySelector('.hp-featured-count .current');
-      var fIndex = -1;
-      function syncFeatured(progress){
-        var index = Math.max(0,Math.min(fCards.length-1,Math.floor(progress*(fCards.length-1)+0.5)));
-        if(index===fIndex)return;
-        fIndex=index;
-        fCards.forEach(function(card,i){card.style.pointerEvents=i===index?'auto':'none';card.inert=i!==index;});
-        fDots.forEach(function(dot,i){dot.classList.toggle('active',i===index);});
-        if(fCount)fCount.textContent=String(index+1).padStart(2,'0');
+      var fPrev = featured.querySelector('[data-featured-prev]');
+      var fNext = featured.querySelector('[data-featured-next]');
+      var fLen = fCards.length;
+      var fIndex = 0;
+
+      function fGoTo(index){
+        fIndex = ((index % fLen) + fLen) % fLen;
+        if (fTrackEl) fTrackEl.style.transform = 'translate3d(-' + (fIndex * 100) + '%,0,0)';
+        fDots.forEach(function(dot,i){dot.classList.toggle('active', i === fIndex);});
+        if (fCount) fCount.textContent = String(fIndex + 1).padStart(2,'0');
+        fCards.forEach(function(card,i){card.inert = i !== fIndex;});
       }
-      gsap.set(fCards,{xPercent:0,yPercent:100,force3D:true});
-      gsap.set(fCards[0],{yPercent:0});
-      fCards.forEach(function(card,i){card.style.zIndex=String(i+1);});
-      var fTimeline=gsap.timeline({defaults:{ease:'none'}});
-      fCards.slice(1).forEach(function(card,i){fTimeline.to(card,{yPercent:0,duration:1},i);});
-      syncFeatured(0);
-      ScrollTrigger.create({animation:fTimeline,trigger:fTrack,start:'top top',
-        end:function(){return '+='+Math.max(1,fTrack.offsetHeight-fStage.offsetHeight);},
-        pin:fStage,pinSpacing:false,pinReparent:true,scrub:0.35,anticipatePin:1,
-        invalidateOnRefresh:true,onUpdate:function(self){syncFeatured(self.progress);}});
+
+      if (fPrev) fPrev.addEventListener('click', function(){fGoTo(fIndex - 1);});
+      if (fNext) fNext.addEventListener('click', function(){fGoTo(fIndex + 1);});
+      fDots.forEach(function(dot,i){dot.addEventListener('click', function(){fGoTo(i);});});
+
+      var fDragging = false, fStartX = 0, fDelta = 0;
+      function fPointerX(e){ return e.touches && e.touches.length ? e.touches[0].clientX : e.clientX; }
+      function fDragStart(e){
+        fDragging = true;
+        fStartX = fPointerX(e);
+        fDelta = 0;
+        if (fTrackEl) fTrackEl.style.transition = 'none';
+      }
+      function fDragMove(e){
+        if (!fDragging) return;
+        fDelta = fPointerX(e) - fStartX;
+        if (fTrackEl) fTrackEl.style.transform = 'translate3d(calc(-' + (fIndex * 100) + '% + ' + fDelta + 'px),0,0)';
+      }
+      function fDragEnd(){
+        if (!fDragging) return;
+        fDragging = false;
+        if (fTrackEl) fTrackEl.style.transition = '';
+        var threshold = Math.max(50, (fViewport ? fViewport.offsetWidth : 320) * 0.12);
+        if (fDelta < -threshold) fGoTo(fIndex + 1);
+        else if (fDelta > threshold) fGoTo(fIndex - 1);
+        else fGoTo(fIndex);
+      }
+      if (fViewport) {
+        fViewport.addEventListener('touchstart', fDragStart, {passive:true});
+        fViewport.addEventListener('touchmove', fDragMove, {passive:true});
+        fViewport.addEventListener('touchend', fDragEnd);
+        fViewport.addEventListener('mousedown', fDragStart);
+        window.addEventListener('mousemove', fDragMove);
+        window.addEventListener('mouseup', fDragEnd);
+      }
+
+      featured.addEventListener('keydown', function(e){
+        if (e.key === 'ArrowRight') fGoTo(fIndex + 1);
+        if (e.key === 'ArrowLeft') fGoTo(fIndex - 1);
+      });
+
+      fGoTo(0);
     }
 
     var processRoot = root.querySelector('[data-hp-process-stack-final]');

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vender — LIVEW</title>
+<meta name="description" content="Vende o teu imóvel com a LIVEW. Preenche o formulário e recebe uma avaliação inicial em até 24 horas úteis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hero-parallax">
+  <div class="hp-preloader" data-hp-preloader role="status" aria-live="polite" aria-label="A carregar página">
+    <div class="hp-preloader-mark" aria-hidden="true">
+      <span>LIVEW</span>
+      <i></i>
+    </div>
+    <p>A abrir novas possibilidades</p>
+  </div>
+  <header class="hp-nav" data-hp-nav>
+    <div class="hp-nav-pill">
+      <a href="index.html" class="hp-nav-logo" data-hp-nav-link>LIVEW</a>
+
+      <nav class="hp-nav-links" aria-label="Navegação principal">
+        <a href="comprar.html" data-hp-nav-link>Comprar</a>
+        <a href="vender.html" data-hp-nav-link>Vender</a>
+        <a href="manifesto.html" data-hp-nav-link>Manifesto</a>
+        <a href="news.html" data-hp-nav-link>News</a>
+        <a href="contactos.html" data-hp-nav-link>Contactos</a>
+      </nav>
+
+      <button type="button" class="hp-nav-burger" data-hp-nav-burger aria-label="Abrir menu" aria-expanded="false" aria-controls="hp-nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="hp-nav-menu" id="hp-nav-menu" data-hp-nav-menu aria-hidden="true">
+      <nav class="hp-nav-menu-links" aria-label="Navegação móvel">
+        <a href="comprar.html" data-hp-nav-link>Comprar</a>
+        <a href="vender.html" data-hp-nav-link>Vender</a>
+        <a href="manifesto.html" data-hp-nav-link>Manifesto</a>
+        <a href="news.html" data-hp-nav-link>News</a>
+        <a href="contactos.html" data-hp-nav-link>Contactos</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hp-cta">
+    <div class="hp-cta-inner">
+      <span class="hp-cta-eyebrow">VENDER</span>
+      <h2 class="hp-cta-title">Conta-nos sobre<br>o teu imóvel.</h2>
+      <p class="hp-cta-desc">Preenche os detalhes abaixo — a nossa equipa analisa o teu caso e entra em contacto contigo em até <strong>24 horas úteis</strong> com uma avaliação inicial.</p>
+
+      <form class="hp-cta-form" onsubmit="return false;">
+        <div class="hp-cta-form-row">
+          <div class="hp-cta-field">
+            <label for="hp-vender-nome">Nome</label>
+            <input type="text" id="hp-vender-nome" name="nome" placeholder="O teu nome" autocomplete="name" required>
+          </div>
+          <div class="hp-cta-field">
+            <label for="hp-vender-email">Email</label>
+            <input type="email" id="hp-vender-email" name="email" placeholder="ola@email.com" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="hp-cta-form-row">
+          <div class="hp-cta-field">
+            <label for="hp-vender-telefone">Telefone</label>
+            <input type="tel" id="hp-vender-telefone" name="telefone" placeholder="+351 000 000 000" autocomplete="tel" required>
+          </div>
+          <div class="hp-cta-field">
+            <label for="hp-vender-tipo">Tipo de imóvel</label>
+            <select id="hp-vender-tipo" name="tipo">
+              <option value="apartamento">Apartamento</option>
+              <option value="moradia">Moradia</option>
+              <option value="terreno">Terreno</option>
+              <option value="comercial">Loja / Escritório</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+        </div>
+        <div class="hp-cta-form-row">
+          <div class="hp-cta-field">
+            <label for="hp-vender-localizacao">Localização</label>
+            <input type="text" id="hp-vender-localizacao" name="localizacao" placeholder="Cidade / zona" required>
+          </div>
+          <div class="hp-cta-field">
+            <label for="hp-vender-tipologia">Tipologia</label>
+            <select id="hp-vender-tipologia" name="tipologia">
+              <option value="t0">T0</option>
+              <option value="t1">T1</option>
+              <option value="t2">T2</option>
+              <option value="t3">T3</option>
+              <option value="t4">T4</option>
+              <option value="t5+">T5 ou superior</option>
+            </select>
+          </div>
+        </div>
+        <div class="hp-cta-form-row">
+          <div class="hp-cta-field">
+            <label for="hp-vender-area">Área (m²)</label>
+            <input type="number" id="hp-vender-area" name="area" placeholder="Ex: 120" min="0">
+          </div>
+          <div class="hp-cta-field">
+            <label for="hp-vender-valor">Valor pretendido (opcional)</label>
+            <input type="text" id="hp-vender-valor" name="valor" placeholder="Ex: 350.000€">
+          </div>
+        </div>
+        <div class="hp-cta-field hp-cta-field--full">
+          <label for="hp-vender-mensagem">Sobre o imóvel</label>
+          <textarea id="hp-vender-mensagem" name="mensagem" rows="4" placeholder="Estado de conservação, características, motivo da venda…"></textarea>
+        </div>
+        <button type="submit" class="hp-cta-form-submit">
+          <span>Pedir avaliação gratuita</span>
+          <b>↗</b>
+        </button>
+        <p class="hp-cta-note">Respondemos em até <strong>24 horas úteis</strong>, sem compromisso.</p>
+      </form>
+    </div>
+  </section>
+  <footer class="hp-footer">
+    <canvas class="hp-footer-bg" data-hp-footer-canvas aria-hidden="true"></canvas>
+    <div class="hp-footer-content">
+
+      <div class="hp-footer-grid">
+        <div class="hp-footer-col hp-footer-col--about">
+          <h3 class="hp-footer-heading">Sobre</h3>
+          <p class="hp-footer-text">Acompanhamos-te em cada etapa da tua compra, venda ou investimento imobiliário — sem atalhos, sem pressa desnecessária.</p>
+          <div class="hp-footer-social">
+            <a href="#" class="hp-footer-icon-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+            <a href="#" class="hp-footer-icon-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21H9z"/></svg></a>
+            <a href="#" class="hp-footer-icon-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.45 2.9h-2.33V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="hp-footer-col">
+          <h3 class="hp-footer-heading">Mapa do site</h3>
+          <a href="index.html" class="hp-footer-link">Início</a>
+          <a href="comprar.html" class="hp-footer-link">Comprar</a>
+          <a href="vender.html" class="hp-footer-link">Vender</a>
+          <a href="manifesto.html" class="hp-footer-link">Manifesto</a>
+          <a href="news.html" class="hp-footer-link">News</a>
+          <a href="contactos.html" class="hp-footer-link">Contactos</a>
+        </div>
+
+        <div class="hp-footer-col">
+          <h3 class="hp-footer-heading">Páginas legais</h3>
+          <a href="#" class="hp-footer-link">Política de Privacidade</a>
+          <a href="#" class="hp-footer-link">Termos de Serviço</a>
+          <a href="#" class="hp-footer-link">Cookies</a>
+        </div>
+
+        <div class="hp-footer-col">
+          <h3 class="hp-footer-heading">Contactos</h3>
+          <a href="contactos.html" class="hp-footer-link">Marcar visita</a>
+          <a href="mailto:ola@livew.pt" class="hp-footer-link">ola@livew.pt</a>
+          <a href="tel:+351210000000" class="hp-footer-link">+351 210 000 000</a>
+        </div>
+      </div>
+
+      <div class="hp-footer-bottom">
+        <span>© 2026 LIVEW. Todos os direitos reservados.</span>
+        <span class="hp-footer-location">
+          <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+          Lisboa · Porto · Algarve
+        </span>
+      </div>
+
+      <div class="hp-footer-word" aria-hidden="true">LIVEW</div>
+    </div>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
